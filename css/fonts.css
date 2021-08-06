@@ -1,43 +1,24 @@
 @charset "UTF-8";
 /* ==========================================================================
    Sandoll 고딕Neo1유니코드
+   ==========================================================================
+   라이센스 문제로 삭제됨
+   ==========================================================================
+*/
+
+/* ==========================================================================
+   Noto Sans - Sandoll 고딕Neo1유니코드 대체
    ========================================================================== */
-@font-face {
-	font-family: 'GothicNeoaUni';
-  font-style: normal;
-  font-weight: 300;
-  src: url("../fonts/CW_WEBSDGothicNeoaUniTTF-cLt.eot");
-  /* IE 호환성 보기 */
-  /* src: url("../fonts/CW_WEBSDGothicNeoaUniTTF-cLt.eot#iefix") format("embedded-opentype"), url("../fonts/CW_WEBSDGothicNeoaUniTTF-cLt.woff2") format("woff2"), url("../fonts/CW_WEBSDGothicNeoaUniTTF-cLt.woff") format("woff"), url("../fonts/CW_APPSDGothicNeoaUniTTF-cLt.ttf") format("truetype"), url("../fonts/CW_APPSDGothicNeoaUni-cLt.otf") format("opentype"); */
-}
-
-@font-face {
-	font-family: 'GothicNeoaUni';
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/CW_WEBSDGothicNeoaUniTTF-eMd.eot");
-  src: url("../fonts/CW_WEBSDGothicNeoaUniTTF-eMd.eot#iefix") format("embedded-opentype"),
-  /* ,url("../fonts/CW_WEBSDGothicNeoaUniTTF-eMd.woff2") format("woff2"), url("../fonts/CW_WEBSDGothicNeoaUniTTF-eMd.woff") format("woff"), url("../fonts/CW_APPSDGothicNeoaUniTTF-eMd.ttf") format("truetype"), url("../fonts/CW_APPSDGothicNeoaUni-eMd.otf") format("opentype"); */
-}
-
-@font-face {
-	font-family: 'GothicNeoaUni';
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/CW_WEBSDGothicNeoaUniTTF-gBd.eot");
-  src: url("../fonts/CW_WEBSDGothicNeoaUniTTF-gBd.eot#iefix") format("embedded-opentype"), url("../fonts/CW_WEBSDGothicNeoaUniTTF-gBd.woff2") format("woff2"), url("../fonts/CW_WEBSDGothicNeoaUniTTF-gBd.woff") format("woff"), url("../fonts/CW_APPSDGothicNeoaUniTTF-gBd.ttf") format("truetype"), url("../fonts/CW_APPSDGothicNeoaUni-gBd.otf") format("opentype");
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
 /* ==========================================================================
    DungGeunMo 둥근모꼴
    ========================================================================== */
 @font-face {
-	font-family: 'DungGeunMo';
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/DungGeunMo.eot");
-  /* IE 호환성 보기 */
-  src: url("../fonts/DungGeunMo.eot#iefix") format("embedded-opentype"), url("../fonts/DungGeunMo.woff2") format("woff2"), url("../fonts/DungGeunMo.woff") format("woff"), url("../fonts/DungGeunMo.ttf") format("truetype"), url("../fonts/DungGeunMo.otf") format("opentype");
+     font-family: 'DungGeunMo';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
 }
 
 /* ==========================================================================
