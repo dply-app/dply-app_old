@@ -10,11 +10,9 @@ window.onload = function() {
   var midnight = new Date();
   midnight.setHours(23,59,59);
   var now = Date.now(), idx;
-  var timeLines = [0, 1628953200000, 1630422000000];
+  var timeLines = [0, 1630422000000];
     // Date.now로 공지를 없앨 타임 확인 후 입력
     // 첫 0은 유지해야 함(아래 switch문 참조)
-    // 1630422000000 - 9월 1일
-    // 1628953200000 - 8월 15일
   [
     'btn_close', 'btn', 'btn_aday','text_area','title_popup'
   ].forEach(selector => {
@@ -72,7 +70,7 @@ window.onload = function() {
     _DOM.main.style.display = 'none';
   }
 }
-var titles = ['서버 장애로 인한 개발 차질 안내문', 'Dply.app 오픈 일정 안내문', ''];
+var titles = ['서버 장애로 인한 개발 차질 안내문', ''];
 var letters = [
   `Dply.app에 대해 기대하고 계실 고객 여러분<br>
 저는 Dply.app 개발진 SSKATE입니다.<br><br>
@@ -129,22 +127,6 @@ Dply.app 서비스는 지난 수년간 많은 우여곡절이 있었습니다. �
 위 내용을 읽으셨으면 확인을 클릭해주세요.
 <br><br>
 `,
-  `안녕하세요, Sirius 입니다.<br><br>
-
-저희 서비스 오픈 일정에 관련하여 안내드립니다.<br><br>
-
-저희 서비스는 8/20일 오전 오픈을 목표로 하고 개발 중이나 위 글과 같이 복구 작업에 지연이 생길 경우 8월 말까지 지연 될 수 있는점 양해 부탁드립니다.<br><br>
-
-또한 서비스 개시가 될 경우 사전 예약(OBT 등록)만 가능하며 그 기간동안 사전에 신청하신 CBT 베타 테스트가 진행됩니다.<br><br>
-
-자세한 공지사항 등은 Sirius 포럼을 참조하세요.<br><br>
-<a href="https://discord.gg/UUkRNzTWzY" target="_blank">포럼 바로가기</a><br><br>
-
-<div style="border-top: 1px solid #ccc;"></div>
-<br><br>
-
-위 내용을 읽으셨으면 확인을 클릭해주세요.
-<br><br>`,
     ``
 ];
 //var titles = ['공지사항 1번 제목입니다.','공지사항 2번 제목입니다.'];
