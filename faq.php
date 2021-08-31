@@ -44,7 +44,7 @@
         <nav class="navbar site-navbar">
           <!-- Brand Logo-->
           <div class="brand-logo">
-            <a href="index.html">
+            <a href="/">
               <!-- light version logo (logo must be black)-->
               <h4 alt="" class="light-version-logo" style="color: #000;">Dply.app</h4>
               <!-- <img src="image/logo/logo-black.png" alt="" class="light-version-logo"> -->
@@ -89,19 +89,19 @@
                   </ul>
                 </li> -->
                 <li class="nav-item">
-                  <a href="faq.html" class="nav-link-item">FAQ</a>
+                  <a href="faq.php" class="nav-link-item">FAQ</a>
                 </li>
                 <li class="nav-item">
                   <a href="https://github.com/dply-app" class="nav-link-item">GitHub</a>
                 </li>
                 <li class="nav-item">
-                  <a href="discord.html" class="nav-link-item">Support</a>
+                  <a href="discord.php" class="nav-link-item">Support</a>
                 </li>
               </ul>
             </nav>
           </div>
           <div class="header-btn sign-in-header-btn-1 ms-auto d-none d-xs-inline-flex">
-            <a class="btn download-trail-btn btn focus-reset" href="index.html#ealry_access">
+            <a class="btn download-trail-btn btn focus-reset" href="index.php#ealry_access">
               사전 예약
             </a>
           </div>

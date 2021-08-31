@@ -89,13 +89,13 @@
                   </ul>
                 </li> -->
                 <li class="nav-item">
-                  <a href="faq.html" class="nav-link-item">FAQ</a>
+                  <a href="faq.php" class="nav-link-item">FAQ</a>
                 </li>
                 <li class="nav-item">
                   <a href="https://github.com/dply-app" target="_blank" class="nav-link-item">GitHub</a>
                 </li>
                 <li class="nav-item">
-                  <a href="discord.html" target="_blank" class="nav-link-item">Support</a>
+                  <a href="discord.php" target="_blank" class="nav-link-item">Support</a>
                 </li>
               </ul>
             </nav>
@@ -236,7 +236,10 @@
               <div class="section__heading text-center">
                 <h2>사전 예약</h2>
               </div>
-              <form action="register.html" class="contact-form-l3">
+              <form action="registerAction.php" method="POST" class="contact-form-l3">
+              <?php
+                if ($_GET['restart'] != 1) {
+              ?>
                 <div class="form-group">
                   <label>이름</label>
                   <input type="text" name="name" id="name" class="form-control" placeholder="Write your name" required>
@@ -244,6 +247,10 @@
                 <div class="form-group">
                   <label>이메일</label>
                   <input type="email" name="email" id="email" class="form-control" placeholder="Write your email address" required>
+                </div>
+                <div class="form-group">
+                  <label>닉네임</label>
+                  <input type="text" name="nickname" id="nickname" class="form-control" placeholder="Write your nickname" required>
                 </div>
                 <div class="form-group">
                   <label>디스코드 태그</label>
@@ -257,13 +264,58 @@
                   <label>휴대전화 번호</label>
                   <input type="tel" pattern="010[0-9]{8}" name="phone" id="phone" class="form-control" placeholder="Write your phone number" maxlength="11" required>
                 </div>
+                <div class="form-group" style>
+                  <div class="h-captcha" data-sitekey="d0d7eb01-1e20-4632-b21b-a0afbf14cd3e" id="hcaptcha"></div>
+                </div>
                 <!--<div class="form-group">
                   <label></label>
                   <textarea name="" id="" class="form-control" placeholder="Add a brief of your project"></textarea>
                 </div>-->
                 <div class="send-btn">
                   <button class="btn btn-style-04">사전예약 하기</button>
+                  <p style="text-align: center;"><br>사전예약 하기를 누르면 개인정보 제공 및 이용,<br>광고/홍보성 메시지 전송에 동의하는 것으로 간주합니다.</p>
                 </div>
+                <?php
+                } else {
+                ?>
+                <div class="form-group">
+                  <label>이름</label>
+                  <input type="text" name="name" id="name" class="form-control" placeholder="Write your name" required value="<?php echo $_GET['name']; ?>">
+                </div>
+                <div class="form-group">
+                  <label>이메일</label>
+                  <input type="email" name="email" id="email" class="form-control" placeholder="Write your email address" required value="<?php echo $_GET['email']; ?>">
+                </div>
+                <div class="form-group">
+                  <label>닉네임</label>
+                  <input type="text" name="nickname" id="nickname" class="form-control" placeholder="Write your nickname" required value="<?php echo $_GET['nickname']; ?>">
+                </div>
+                <div class="form-group">
+                  <label>디스코드 태그</label>
+                  <input type="text" name="tag" id="tag" class="form-control" placeholder="Write your discord tag" required value="<?php echo $_GET['tag']; ?>">
+                </div>
+                <div class="form-group">
+                  <label>생년월일 (MM/DD/YYYY)</label>
+                  <input type="text" pattern="[0-9]{2}/[0-9]{2}/[1-9]{1}[0-9]{3}" name="birth" id="birth" class="form-control" maxlength="10" placeholder="Write your birth" required value="<?php echo $_GET['birth']; ?>">
+                </div>
+                <div class="form-group">
+                  <label>휴대전화 번호</label>
+                  <input type="tel" pattern="010[0-9]{8}" name="phone" id="phone" class="form-control" placeholder="Write your phone number" maxlength="11" required value="<?php echo $_GET['phone']; ?>">
+                </div>
+                <div class="form-group" style>
+                  <div class="h-captcha" data-sitekey="d0d7eb01-1e20-4632-b21b-a0afbf14cd3e" id="hcaptcha"></div>
+                </div>
+                <!--<div class="form-group">
+                  <label></label>
+                  <textarea name="" id="" class="form-control" placeholder="Add a brief of your project"></textarea>
+                </div>-->
+                <div class="send-btn">
+                  <button class="btn btn-style-04">사전예약 하기</button>
+                  <p style="text-align: center;"><br>사전예약 하기를 누르면 개인정보 제공 및 이용,<br>광고/홍보성 메시지 전송에 동의하는 것으로 간주합니다.</p>
+                </div>
+                <?php
+                }
+                ?>
               </form>
             </div>
           </div>
@@ -309,6 +361,7 @@
             </ul>
           </div>
         </div>
+        
       </div>
     </footer>
   </div>
@@ -327,6 +380,7 @@
   <script src="./plugins/menu/menu.js"></script>
   <!-- Activation Script -->
   <script src="js/custom.js"></script>
+  <script src='https://www.hCaptcha.com/1/api.js' async defer></script>
 </body>
 
 </html>
