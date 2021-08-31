@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* ==========================================================================
+   Sandoll 고딕Neo1유니코드
+   ==========================================================================
+   라이센스 문제로 삭제됨
+   ==========================================================================
+*/
+
+/* ==========================================================================
+   Noto Sans - Sandoll 고딕Neo1유니코드 대체
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* ==========================================================================
+   DungGeunMo 둥근모꼴
+   ========================================================================== */
+@font-face {
+     font-family: 'DungGeunMo';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+
+/* ==========================================================================
+   Gmarket Sans
+   ========================================================================== */
+@font-face {
+	font-family: 'GmarketSans';
+  src: url("../fonts/GmarketSansLight.woff2") format("woff2"), url("../fonts/GmarketSansLight.woff") format("woff"), url("../fonts/GmarketSansTTFLight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: 'GmarketSans';
+  src: url("../fonts/GmarketSansMedium.woff2") format("woff2"), url("../fonts/GmarketSansMedium.woff") format("woff"), url("../fonts/GmarketSansTTFMedium.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: 'GmarketSans';
+  src: url("../fonts/GmarketSansBold.woff2") format("woff2"), url("../fonts/GmarketSansBold.woff") format("woff"), url("../fonts/GmarketSansTTFBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}

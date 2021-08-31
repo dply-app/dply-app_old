@@ -1,0 +1,97 @@
+h1 {
+  width: 258px;
+  margin: 60px auto 4px;
+  background-size: 100%;
+}
+header .inner_1140 {
+  height: 570px;
+  background-size: 104%;
+  background-position: 19px 0px;
+}
+header .inner_1140 > div:first-of-type {
+  top: 295px;
+}
+header .inner_1140 > div:last-of-type {
+  top: 405px;
+}
+header .inner_1140 > div:nth-of-type(2) {
+  position: absolute;
+  bottom: 0px; 
+  left: 0px; 
+  right:0px; 
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1; 
+  width: 260px; 
+  height: 134px; 
+  top: 185px; 
+  background: url(../images/bgm_btn.png) no-repeat; 
+  background-size: contain;
+}
+h1+p::after {content:''; position: absolute; top: 0; right: 0; width: 0; height: 0;  }
+@media (min-width: 640px) {
+  header .inner_1140 {
+/*    height: 433px;*/
+    height: 80px;
+    background-size: 44%;
+    background-position: center 15px;
+  }
+}
+@media (min-width: 768px) {
+  header .inner_1140 {
+/*    height: 433px;*/
+    height: 80px;
+    background-size: 55%;
+    background-position: center 15px;
+  }
+  header .inner_1140 > div:first-of-type, header .inner_1140 > div:last-of-type {
+    top: unset;
+  }
+  header .inner_1140 > div:first-of-type, header .inner_1140 > div:last-of-type {
+    bottom: 47px;
+  }
+  header .inner_1140 > div:last-child a::after {
+    top: -157px;
+    left: 56%;
+    width: 188px;
+    height: 129px;
+    background-size: 87%;
+  }
+  header .inner_1140 > div:nth-of-type(2) {
+    top: unset;
+    bottom: 47px;
+    width: 210px;
+  }
+  header span.dec.mo_hide {
+    top: 289px;
+  }
+  h1 {width: 400px; height: 83px; background: url(../images/logo_new.png) no-repeat; background-size: contain; margin: 100px auto 15px;}
+}
+
+@media (min-width: 1024px) {
+  header .inner_1140 {
+/*    height: 555px;*/
+    height: 80px;
+    background-size: 40%;
+    background-position: center 23px;
+  }
+  header .inner_1140 > div:first-of-type, header .inner_1140 > div:last-of-type {
+    bottom: 151px;
+  }
+  header .inner_1140 > div:nth-of-type(2) {
+    bottom: 151px;
+    width: 290px;
+  }
+  header span.dec.mo_hide {
+    top: 283px;
+  }
+}
+
+@media (min-width: 1280px) {
+  h1+p {font-size: 57px; text-align: center;}
+
+  header .inner_1140 > div:nth-of-type(2) {
+    bottom: 151px;
+    width: 310px;
+  }
+}
