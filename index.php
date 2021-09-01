@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Dply.app - Main </title>
-  <link rel="shortcut icon" href="./static/image/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="/static/image/favicon.png" type="image/x-icon">
   <!-- Bootstrap , fonts & icons  -->
-  <link rel="stylesheet" href="./static/css/bootstrap.css">
-  <link rel="stylesheet" href="./static/fonts/icon-font/css/style.css">
-  <link rel="stylesheet" href="./static/fonts/typography-font/typo.css">
-  <link rel="stylesheet" href="./static/fonts/fontawesome-5/css/all.css">
+  <link rel="stylesheet" href="/static/css/bootstrap.css">
+  <link rel="stylesheet" href="/static/fonts/icon-font/css/style.css">
+  <link rel="stylesheet" href="/static/fonts/typography-font/typo.css">
+  <link rel="stylesheet" href="/static/fonts/fontawesome-5/css/all.css">
   <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -21,14 +21,14 @@
   <!-- Plugin'stylesheets  -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-default/default.css">
-  <link rel="stylesheet" href="./static/plugins/aos/aos.min.css">
-  <link rel="stylesheet" href="./static/plugins/fancybox/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="./static/plugins/nice-select/nice-select.min.css">
-  <link rel="stylesheet" href="./static/plugins/slick/slick.min.css">
+  <link rel="stylesheet" href="/static/plugins/aos/aos.min.css">
+  <link rel="stylesheet" href="/static/plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="/static/plugins/nice-select/nice-select.min.css">
+  <link rel="stylesheet" href="/static/plugins/slick/slick.min.css">
   <!-- Vendor stylesheets  -->
-  <link rel="stylesheet" href="./static/css/main.css">
+  <link rel="stylesheet" href="/static/css/main.css">
   <!-- Custom stylesheet -->
-  <link rel="stylesheet" href="./static/css/fonts.css">
+  <link rel="stylesheet" href="/static/css/fonts.css">
 </head>
 
 <body data-theme-mode-panel-active data-theme="light" style="font-family: 'Mazzard H';">
@@ -37,7 +37,7 @@
     <!-- Preloader -->
     <!-- <div id="loading">
     <div class="preloader">
-     <img src="./static/image/preloader.gif" alt="preloader">
+     <img src="/static/image/preloader.gif" alt="preloader">
    </div>
    </div>    -->
     <!--Site Header Area -->
@@ -49,10 +49,10 @@
             <a href="#">
               <!-- light version logo (logo must be black)-->
               <h4 alt="" class="light-version-logo" style="color: #000;">Dply.app</h4>
-              <!-- <img src="./static/image/logo/logo-black.png" alt="" class="light-version-logo"> -->
+              <!-- <img src="/static/image/logo/logo-black.png" alt="" class="light-version-logo"> -->
               <!-- Dark version logo (logo must be White)-->
               <h4 alt="" class="dark-version-logo" style="color: #fff;">Dply.app</h4>
-              <!-- <img src="./static/image/logo/logo-white.png" alt="" class="dark-version-logo"> -->
+              <!-- <img src="/static/image/logo/logo-white.png" alt="" class="dark-version-logo"> -->
             </a>
           </div>
           <div class="menu-block-wrapper">
@@ -117,16 +117,16 @@
     </header>
     <!-- navbar- -->
     <!-- Hero Area -->
-    <div class="hero-area-l3 background-property" style="background: url(./static/image/landing-3/hero-bg.png);">
+    <div class="hero-area-l3 background-property" style="background: url(/static/image/landing-3/hero-bg.png);">
       <div class="hero-l3-shape-1 d-none d-lg-block" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
-        <img class="horizontal-move" src="./static/image/landing-3/banner-shape-1.png" alt="image">
+        <img class="horizontal-move" src="/static/image/landing-3/banner-shape-1.png" alt="image">
       </div>
       <div class="container">
         <div class="row justify-content-center">
           <div class="offset-xxl-7 col-xxl-5 offset-xl-6 col-xl-6 offset-lg-4 col-lg-8 col-md-10" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
             <div class="banner-content">
               <div class="hero-l3-shape-2 d-none d-md-block" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
-                <img class="vertical-move" src="./static/image/landing-3/banner-shape-2.png" alt="image">
+                <img class="vertical-move" src="/static/image/landing-3/banner-shape-2.png" alt="image">
               </div>
               <div class="content">
                 <h2>Dply.app으로 빠르고 저렴하게 호스팅을 진행해 보세요!</h2>
@@ -194,7 +194,7 @@
           <div class="offset-lg-2 col-lg-5 col-md-8" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
             <div class="content-l3-1-counter-area">
               <div class="content-l3-1-image ">
-                <img class="w-100 d-none d-md-block" src="./static/image/landing-3/counter-img.png" alt="img">
+                <img class="w-100 d-none d-md-block" src="/static/image/landing-3/counter-img.png" alt="img">
                 <!-- <div class="counter-box-l3 text-center text-md-start">
                   <div class="counter-items">
                     <div class="counter-content">
@@ -213,22 +213,22 @@
     <div class="contact-form-l3-area position-relative overflow-hidden bg-mirage" id="ealry_access">
       <div class="contact-l3-image-group">
         <div class="image-1 d-none d-md-block" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-          <img class="vertical-move" src="./static/image/landing-3/con-shape-1.png" alt="image">
+          <img class="vertical-move" src="/static/image/landing-3/con-shape-1.png" alt="image">
         </div>
         <div class="image-2 d-none d-lg-block" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-          <img class="spin" src="./static/image/landing-3/con-shape-2.png" alt="image">
+          <img class="spin" src="/static/image/landing-3/con-shape-2.png" alt="image">
         </div>
         <div class="image-3 d-none d-lg-block" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
-          <img class="spin" src="./static/image/landing-3/con-shape-3.png" alt="image">
+          <img class="spin" src="/static/image/landing-3/con-shape-3.png" alt="image">
         </div>
         <div class="image-4 d-none d-md-block" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
-          <img class="horizontal-move" src="./static/image/landing-3/con-shape-4.png" alt="image">
+          <img class="horizontal-move" src="/static/image/landing-3/con-shape-4.png" alt="image">
         </div>
         <div class="image-5 d-none d-lg-block" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
-          <img class="spin" src="./static/image/landing-3/con-shape-5.png" alt="image">
+          <img class="spin" src="/static/image/landing-3/con-shape-5.png" alt="image">
         </div>
         <div class="image-6 d-none d-md-block" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
-          <img class="vertical-move" src="./static/image/landing-3/con-shape-6.png" alt="image">
+          <img class="vertical-move" src="/static/image/landing-3/con-shape-6.png" alt="image">
         </div>
       </div>
       <div class="container">
@@ -373,22 +373,22 @@
     </footer> -->
   </div>
   <!-- Vendor Scripts -->
-  <script src="./static/js/vendor.min.js"></script>
+  <script src="/static/js/vendor.min.js"></script>
   <!-- Plugin's Scripts -->
-  <link rel="stylesheet" href="./static/plugins/jquery-ui/jquery-ui.css">
-  <script src="./static/plugins/jquery-ui/jquery-ui.js"></script>
-  <script src="./static/plugins/fancybox/jquery.fancybox.min.js"></script>
-  <script src="./static/plugins/nice-select/jquery.nice-select.min.js"></script>
-  <script src="./static/plugins/aos/aos.min.js"></script>
-  <script src="./static/plugins/slick/slick.min.js"></script>
+  <link rel="stylesheet" href="/static/plugins/jquery-ui/jquery-ui.css">
+  <script src="/static/plugins/jquery-ui/jquery-ui.js"></script>
+  <script src="/static/plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="/static/plugins/nice-select/jquery.nice-select.min.js"></script>
+  <script src="/static/plugins/aos/aos.min.js"></script>
+  <script src="/static/plugins/slick/slick.min.js"></script>
   <script src="https://porjoton.netlify.app/mekanic/js/waypoints.min.js"></script>
-  <script src="./static/plugins/counter-up/jquery.counterup.min.js"></script>
-  <script src="./static/plugins/isotope/isotope.pkgd.min.js"></script>
-  <script src="./static/plugins/isotope/packery.pkgd.min.js"></script>
-  <script src="./static/plugins/isotope/image.loaded.js"></script>
-  <script src="./static/plugins/menu/menu.js"></script>
+  <script src="/static/plugins/counter-up/jquery.counterup.min.js"></script>
+  <script src="/static/plugins/isotope/isotope.pkgd.min.js"></script>
+  <script src="/static/plugins/isotope/packery.pkgd.min.js"></script>
+  <script src="/static/plugins/isotope/image.loaded.js"></script>
+  <script src="/static/plugins/menu/menu.js"></script>
   <!-- Activation Script -->
-  <script src="./static/js/custom.js"></script>
+  <script src="/static/js/custom.js"></script>
   <script src='https://www.hCaptcha.com/1/api.js' async defer></script>
   <script>$("#birth").datepicker();</script>
 </body>
