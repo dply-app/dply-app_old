@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Startup Agency </title>
-  <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
+  <title>Dply.app - Main </title>
+  <link rel="shortcut icon" href="./static/image/favicon.png" type="image/x-icon">
   <!-- Bootstrap , fonts & icons  -->
-  <link rel="stylesheet" href="./css/bootstrap.css">
-  <link rel="stylesheet" href="./fonts/icon-font/css/style.css">
-  <link rel="stylesheet" href="./fonts/typography-font/typo.css">
-  <link rel="stylesheet" href="./fonts/fontawesome-5/css/all.css">
+  <link rel="stylesheet" href="./static/css/bootstrap.css">
+  <link rel="stylesheet" href="./static/fonts/icon-font/css/style.css">
+  <link rel="stylesheet" href="./static/fonts/typography-font/typo.css">
+  <link rel="stylesheet" href="./static/fonts/fontawesome-5/css/all.css">
   <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -19,14 +19,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <!-- Plugin'stylesheets  -->
-  <link rel="stylesheet" href="./plugins/aos/aos.min.css">
-  <link rel="stylesheet" href="./plugins/fancybox/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="./plugins/nice-select/nice-select.min.css">
-  <link rel="stylesheet" href="./plugins/slick/slick.min.css">
+  <link rel="stylesheet" href="./static/plugins/aos/aos.min.css">
+  <link rel="stylesheet" href="./static/plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="./static/plugins/nice-select/nice-select.min.css">
+  <link rel="stylesheet" href="./static/plugins/slick/slick.min.css">
   <!-- Vendor stylesheets  -->
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./static/css/main.css">
   <!-- Custom stylesheet -->
-  <link rel="stylesheet" href="./css/fonts.css">
+  <link rel="stylesheet" href="./static/css/fonts.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-default/default.css">
 </head>
 
 <body data-theme-mode-panel-active data-theme="light" style="font-family: 'Mazzard H';">
@@ -35,7 +37,7 @@
     <!-- Preloader -->
     <!-- <div id="loading">
     <div class="preloader">
-     <img src="./image/preloader.gif" alt="preloader">
+     <img src="./static/image/preloader.gif" alt="preloader">
    </div>
    </div>    -->
     <!--Site Header Area -->
@@ -47,10 +49,10 @@
             <a href="#">
               <!-- light version logo (logo must be black)-->
               <h4 alt="" class="light-version-logo" style="color: #000;">Dply.app</h4>
-              <!-- <img src="image/logo/logo-black.png" alt="" class="light-version-logo"> -->
+              <!-- <img src="./static/image/logo/logo-black.png" alt="" class="light-version-logo"> -->
               <!-- Dark version logo (logo must be White)-->
               <h4 alt="" class="dark-version-logo" style="color: #fff;">Dply.app</h4>
-              <!-- <img src="image/logo/logo-white.png" alt="" class="dark-version-logo"> -->
+              <!-- <img src="./static/image/logo/logo-white.png" alt="" class="dark-version-logo"> -->
             </a>
           </div>
           <div class="menu-block-wrapper">
@@ -89,13 +91,13 @@
                   </ul>
                 </li> -->
                 <li class="nav-item">
-                  <a href="faq.php" class="nav-link-item">FAQ</a>
+                  <a href="faq" class="nav-link-item">FAQ</a>
                 </li>
                 <li class="nav-item">
                   <a href="https://github.com/dply-app" target="_blank" class="nav-link-item">GitHub</a>
                 </li>
                 <li class="nav-item">
-                  <a href="discord.php" target="_blank" class="nav-link-item">Support</a>
+                  <a href="discord" target="_blank" class="nav-link-item">Support</a>
                 </li>
               </ul>
             </nav>
@@ -115,19 +117,19 @@
     </header>
     <!-- navbar- -->
     <!-- Hero Area -->
-    <div class="hero-area-l3 background-property" style="background: url(./image/landing-3/hero-bg.png);">
+    <div class="hero-area-l3 background-property" style="background: url(./static/image/landing-3/hero-bg.png);">
       <div class="hero-l3-shape-1 d-none d-lg-block" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
-        <img class="horizontal-move" src="./image/landing-3/banner-shape-1.png" alt="image">
+        <img class="horizontal-move" src="./static/image/landing-3/banner-shape-1.png" alt="image">
       </div>
       <div class="container">
         <div class="row justify-content-center">
           <div class="offset-xxl-7 col-xxl-5 offset-xl-6 col-xl-6 offset-lg-4 col-lg-8 col-md-10" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
             <div class="banner-content">
               <div class="hero-l3-shape-2 d-none d-md-block" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
-                <img class="vertical-move" src="./image/landing-3/banner-shape-2.png" alt="image">
+                <img class="vertical-move" src="./static/image/landing-3/banner-shape-2.png" alt="image">
               </div>
               <div class="content">
-                <h2 style="font-size: 40px;">Dply.app으로 빠르고 저렴하게 호스팅을 진행해 보세요!</h2>
+                <h2>Dply.app으로 빠르고 저렴하게 호스팅을 진행해 보세요!</h2>
                 <p>Dply.app은 학생들을 위해 저렴한 가격으로 국내 가상서버 호스팅을 지원하는 서비스입니다.</p>
               </div>
               <div class="hero-l3-btn-group">
@@ -192,7 +194,7 @@
           <div class="offset-lg-2 col-lg-5 col-md-8" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
             <div class="content-l3-1-counter-area">
               <div class="content-l3-1-image ">
-                <img class="w-100 d-none d-md-block" src="image/landing-3/counter-img.png" alt="img">
+                <img class="w-100 d-none d-md-block" src="./static/image/landing-3/counter-img.png" alt="img">
                 <!-- <div class="counter-box-l3 text-center text-md-start">
                   <div class="counter-items">
                     <div class="counter-content">
@@ -211,22 +213,22 @@
     <div class="contact-form-l3-area position-relative overflow-hidden bg-mirage" id="ealry_access">
       <div class="contact-l3-image-group">
         <div class="image-1 d-none d-md-block" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-          <img class="vertical-move" src="image/landing-3/con-shape-1.png" alt="image">
+          <img class="vertical-move" src="./static/image/landing-3/con-shape-1.png" alt="image">
         </div>
         <div class="image-2 d-none d-lg-block" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-          <img class="spin" src="image/landing-3/con-shape-2.png" alt="image">
+          <img class="spin" src="./static/image/landing-3/con-shape-2.png" alt="image">
         </div>
         <div class="image-3 d-none d-lg-block" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
-          <img class="spin" src="image/landing-3/con-shape-3.png" alt="image">
+          <img class="spin" src="./static/image/landing-3/con-shape-3.png" alt="image">
         </div>
         <div class="image-4 d-none d-md-block" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
-          <img class="horizontal-move" src="image/landing-3/con-shape-4.png" alt="image">
+          <img class="horizontal-move" src="./static/image/landing-3/con-shape-4.png" alt="image">
         </div>
         <div class="image-5 d-none d-lg-block" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
-          <img class="spin" src="image/landing-3/con-shape-5.png" alt="image">
+          <img class="spin" src="./static/image/landing-3/con-shape-5.png" alt="image">
         </div>
         <div class="image-6 d-none d-md-block" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
-          <img class="vertical-move" src="image/landing-3/con-shape-6.png" alt="image">
+          <img class="vertical-move" src="./static/image/landing-3/con-shape-6.png" alt="image">
         </div>
       </div>
       <div class="container">
@@ -275,6 +277,23 @@
                   <button class="btn btn-style-04">사전예약 하기</button>
                   <p style="text-align: center;"><br>사전예약 하기를 누르면 개인정보 제공 및 이용,<br>광고/홍보성 메시지 전송에 동의하는 것으로 간주합니다.</p>
                 </div>
+                <script>
+                  document.body.querySelector('.send-btn .btn').addEventListener('click', (e) => {
+                    var hcaptcha_data = document.body.querySelector(".h-captcha iframe").dataset.hcaptchaResponse;
+                    var name = document.body.querySelector("#name").value;
+                    var email = document.body.querySelector("#email").value;
+                    var nickname = document.body.querySelector("#nickname").value;
+                    var tag = document.body.querySelector("#tag").value;
+                    var birth = document.body.querySelector("#birth").value;
+                    var phone = document.body.querySelector("#phone").value;
+                    if (name || email || nickname || tag || birth || phone) {
+                      if (hcaptcha_data == "" || !hcaptcha_data || hcaptcha_data == null || hcaptcha_data == undefined) {
+                        Swal.fire({icon: 'error', title: 'hCaptcha Error', html: 'hCaptcha를 진행하지 않았습니다.<br>hCaptcha를 진행해 주십시오.'})
+                        e.preventDefault()
+                      }
+                    }
+                  })
+                </script>
                 <?php
                 } else {
                 ?>
@@ -313,6 +332,23 @@
                   <button class="btn btn-style-04">사전예약 하기</button>
                   <p style="text-align: center;"><br>사전예약 하기를 누르면 개인정보 제공 및 이용,<br>광고/홍보성 메시지 전송에 동의하는 것으로 간주합니다.</p>
                 </div>
+                <script>
+                  document.body.querySelector('.send-btn .btn').addEventListener('click', (e) => {
+                    var hcaptcha_data = document.body.querySelector(".h-captcha iframe").dataset.hcaptchaResponse;
+                    var name = document.body.querySelector("#name").value;
+                    var email = document.body.querySelector("#email").value;
+                    var nickname = document.body.querySelector("#nickname").value;
+                    var tag = document.body.querySelector("#tag").value;
+                    var birth = document.body.querySelector("#birth").value;
+                    var phone = document.body.querySelector("#phone").value;
+                    if (name || email || nickname || tag || birth || phone) {
+                      if (hcaptcha_data == "" || !hcaptcha_data || hcaptcha_data == null || hcaptcha_data == undefined) {
+                        Swal.fire({icon: 'error', title: 'hCaptcha Error', html: 'hCaptcha를 진행하지 않았습니다.<br>hCaptcha를 진행해 주십시오.'})
+                        e.preventDefault()
+                      }
+                    }
+                  })
+                </script>
                 <?php
                 }
                 ?>
@@ -323,63 +359,34 @@
       </div>
     </div>
     <!-- Footer Area -->
-    <footer class="footer-area-l3 position-relative">
+    <!-- <footer class="footer-area-l3 position-relative">
       <div class="container">
         <div class="row justify-content-center footer-l3-area-items">
           <div class="col-xl-4 col-lg-4 col-sm-9">
             <div class="footer-content-l3 text-sm-center text-lg-start">
-              <a href="#"><img src="image/logo/logo-black.png" alt="image"></a>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+              <a href="#"><h4 style="color: #000;">Dply.app</h4></a><br/>
+              <p>Copyright &copy; 2021 Dply.app, All Rights Reserved.</p>
+            </div>
             </div>
           </div>
-          <div class="offset-xl-2 col-xl-2 col-lg-3 col-sm-4">
-            <h3>Company</h3>
-            <ul class="list-unstyled">
-              <li><a href="#">Global location</a></li>
-              <li><a href="#">Missions</a></li>
-              <li><a href="#">Careers </a></li>
-              <li><a href="#">Investors </a></li>
-              <li><a href="#">News rooms </a></li>
-            </ul>
-          </div>
-          <div class="col-xl-2 col-lg-3 col-sm-4">
-            <h3>Impact</h3>
-            <ul class="list-unstyled">
-              <li><a href="#">Creator awards</a></li>
-              <li><a href="#">Creative ideas</a></li>
-              <li><a href="#">Refuge initiatives </a></li>
-              <li><a href="#">Residents </a></li>
-            </ul>
-          </div>
-          <div class="col-xl-2 col-lg-2 col-sm-4">
-            <h3>Partnership</h3>
-            <ul class="list-unstyled">
-              <li><a href="#">Brookers</a></li>
-              <li><a href="#">Impact coffee</a></li>
-              <li><a href="#">Table talk</a></li>
-              <li><a href="#">Push door </a></li>
-            </ul>
-          </div>
-        </div>
-        
       </div>
-    </footer>
+    </footer> -->
   </div>
   <!-- Vendor Scripts -->
-  <script src="js/vendor.min.js"></script>
+  <script src="./static/js/vendor.min.js"></script>
   <!-- Plugin's Scripts -->
-  <script src="./plugins/fancybox/jquery.fancybox.min.js"></script>
-  <script src="./plugins/nice-select/jquery.nice-select.min.js"></script>
-  <script src="./plugins/aos/aos.min.js"></script>
-  <script src="./plugins/slick/slick.min.js"></script>
+  <script src="./static/plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="./static/plugins/nice-select/jquery.nice-select.min.js"></script>
+  <script src="./static/plugins/aos/aos.min.js"></script>
+  <script src="./static/plugins/slick/slick.min.js"></script>
   <script src="https://porjoton.netlify.app/mekanic/js/waypoints.min.js"></script>
-  <script src="./plugins/counter-up/jquery.counterup.min.js"></script>
-  <script src="./plugins/isotope/isotope.pkgd.min.js"></script>
-  <script src="./plugins/isotope/packery.pkgd.min.js"></script>
-  <script src="./plugins/isotope/image.loaded.js"></script>
-  <script src="./plugins/menu/menu.js"></script>
+  <script src="./static/plugins/counter-up/jquery.counterup.min.js"></script>
+  <script src="./static/plugins/isotope/isotope.pkgd.min.js"></script>
+  <script src="./static/plugins/isotope/packery.pkgd.min.js"></script>
+  <script src="./static/plugins/isotope/image.loaded.js"></script>
+  <script src="./static/plugins/menu/menu.js"></script>
   <!-- Activation Script -->
-  <script src="js/custom.js"></script>
+  <script src="./static/js/custom.js"></script>
   <script src='https://www.hCaptcha.com/1/api.js' async defer></script>
 </body>
 
