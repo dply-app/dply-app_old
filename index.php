@@ -238,7 +238,7 @@
               <div class="section__heading text-center">
                 <h2>사전 예약</h2>
               </div>
-              <form action="registerAction.php" method="POST" class="contact-form-l3">
+              <form action="/registerAction.php" method="POST" class="contact-form-l3">
               <?php
                 if ($_GET['restart'] != 1) {
               ?>
