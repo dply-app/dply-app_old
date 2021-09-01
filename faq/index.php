@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Dply.app - FAQ </title>
-  <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../static/image/favicon.png" type="image/x-icon">
   <!-- Bootstrap , fonts & icons  -->
-  <link rel="stylesheet" href="./static/css/bootstrap.css">
-  <link rel="stylesheet" href="./static/fonts/icon-font/css/style.css">
-  <link rel="stylesheet" href="./static/fonts/typography-font/typo.css">
-  <link rel="stylesheet" href="./static/fonts/fontawesome-5/css/all.css">
+  <link rel="stylesheet" href="../static/css/bootstrap.css">
+  <link rel="stylesheet" href="../static/fonts/icon-font/css/style.css">
+  <link rel="stylesheet" href="../static/fonts/typography-font/typo.css">
+  <link rel="stylesheet" href="../static/fonts/fontawesome-5/css/all.css">
   <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -19,14 +19,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <!-- Plugin'stylesheets  -->
-  <link rel="stylesheet" href="./static/plugins/aos/aos.min.css">
-  <link rel="stylesheet" href="./static/plugins/fancybox/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="./static/plugins/nice-select/nice-select.min.css">
-  <link rel="stylesheet" href="./static/plugins/slick/slick.min.css">
+  <link rel="stylesheet" href="../static/plugins/aos/aos.min.css">
+  <link rel="stylesheet" href="../static/plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="../static/plugins/nice-select/nice-select.min.css">
+  <link rel="stylesheet" href="../static/plugins/slick/slick.min.css">
   <!-- Vendor stylesheets  -->
-  <link rel="stylesheet" href="./static/css/main.css">
+  <link rel="stylesheet" href="../static/css/main.css">
   <!-- Custom stylesheet -->
-  <link rel="stylesheet" href="./static/css/fonts.css">
+  <link rel="stylesheet" href="../static/css/fonts.css">
 </head>
 
 <body data-theme-mode-panel-active data-theme="light" style="font-family: 'Mazzard H';">
@@ -35,7 +35,7 @@
     <!-- Preloader -->
     <!-- <div id="loading">
     <div class="preloader">
-     <img src="./static/image/preloader.gif" alt="preloader">
+     <img src="../static/image/preloader.gif" alt="preloader">
    </div>
    </div>    -->
     <!--Site Header Area -->
@@ -47,10 +47,10 @@
             <a href="/">
               <!-- light version logo (logo must be black)-->
               <h4 alt="" class="light-version-logo" style="color: #000;">Dply.app</h4>
-              <!-- <img src="image/logo/logo-black.png" alt="" class="light-version-logo"> -->
+              <!-- <img .src="../static/image/logo/logo-black.png" alt="" class="light-version-logo"> -->
               <!-- Dark version logo (logo must be White)-->
               <h4 alt="" class="dark-version-logo" style="color: #fff;">Dply.app</h4>
-              <!-- <img src="image/logo/logo-white.png" alt="" class="dark-version-logo"> -->
+              <!-- <img .src="../static/image/logo/logo-white.png" alt="" class="dark-version-logo"> -->
             </a>
           </div>
           <div class="menu-block-wrapper">
@@ -282,20 +282,20 @@
     </footer> -->
   </div>
   <!-- Vendor Scripts -->
-  <script src="./static/js/vendor.min.js"></script>
+  <script src="../static/js/vendor.min.js"></script>
   <!-- Plugin's Scripts -->
-  <script src="./static/plugins/fancybox/jquery.fancybox.min.js"></script>
-  <script src="./static/plugins/nice-select/jquery.nice-select.min.js"></script>
-  <script src="./static/plugins/aos/aos.min.js"></script>
-  <script src="./static/plugins/slick/slick.min.js"></script>
+  <script src="../static/plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="../static/plugins/nice-select/jquery.nice-select.min.js"></script>
+  <script src="../static/plugins/aos/aos.min.js"></script>
+  <script src="../static/plugins/slick/slick.min.js"></script>
   <script src="https://porjoton.netlify.app/mekanic/js/waypoints.min.js"></script>
-  <script src="./static/plugins/counter-up/jquery.counterup.min.js"></script>
-  <script src="./static/plugins/isotope/isotope.pkgd.min.js"></script>
-  <script src="./static/plugins/isotope/packery.pkgd.min.js"></script>
-  <script src="./static/plugins/isotope/image.loaded.js"></script>
-  <script src="./static/plugins/menu/menu.js"></script>
+  <script src="../static/plugins/counter-up/jquery.counterup.min.js"></script>
+  <script src="../static/plugins/isotope/isotope.pkgd.min.js"></script>
+  <script src="../static/plugins/isotope/packery.pkgd.min.js"></script>
+  <script src="../static/plugins/isotope/image.loaded.js"></script>
+  <script src="../static/plugins/menu/menu.js"></script>
   <!-- Activation Script -->
-  <script src="./static/js/custom.js"></script>
+  <script src="../static/js/custom.js"></script>
 </body>
 
 </html>

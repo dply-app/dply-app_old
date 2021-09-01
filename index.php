@@ -19,6 +19,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <!-- Plugin'stylesheets  -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-default/default.css">
   <link rel="stylesheet" href="./static/plugins/aos/aos.min.css">
   <link rel="stylesheet" href="./static/plugins/fancybox/jquery.fancybox.min.css">
   <link rel="stylesheet" href="./static/plugins/nice-select/nice-select.min.css">
@@ -27,8 +29,6 @@
   <link rel="stylesheet" href="./static/css/main.css">
   <!-- Custom stylesheet -->
   <link rel="stylesheet" href="./static/css/fonts.css">
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-default/default.css">
 </head>
 
 <body data-theme-mode-panel-active data-theme="light" style="font-family: 'Mazzard H';">
@@ -173,7 +173,7 @@
               </div>
               <div class="content">
                 <h4>가격이 저렴하다</h4>
-                <p>저렴한 가격으로 서비스를 이용할 수 있습니다. <a href="faq.html">가격 보기</a></p>
+                <p>저렴한 가격으로 서비스를 이용할 수 있습니다. <a href="faq">가격 보기</a></p>
               </div>
             </div>
           </div>
@@ -243,11 +243,11 @@
                 if ($_GET['restart'] != 1) {
               ?>
                 <div class="form-group">
-                  <label>이름</label>
+                  <label>이름 (본명 아니어도 됨)</label>
                   <input type="text" name="name" id="name" class="form-control" placeholder="Write your name" required>
                 </div>
                 <div class="form-group">
-                  <label>이메일</label>
+                  <label>이메일 (구글 메일로 해주세요!!)</label>
                   <input type="email" name="email" id="email" class="form-control" placeholder="Write your email address" required>
                 </div>
                 <div class="form-group">
@@ -255,16 +255,16 @@
                   <input type="text" name="nickname" id="nickname" class="form-control" placeholder="Write your nickname" required>
                 </div>
                 <div class="form-group">
-                  <label>디스코드 태그</label>
+                  <label>디스코드 태그 (ex. ! SSKATE ✅#9781)</label>
                   <input type="text" name="tag" id="tag" class="form-control" placeholder="Write your discord tag" required>
                 </div>
                 <div class="form-group">
-                  <label>생년월일 (MM/DD/YYYY)</label>
-                  <input type="text" pattern="[0-9]{2}/[0-9]{2}/[1-9]{1}[0-9]{3}" name="birth" id="birth" class="form-control" maxlength="10" placeholder="Write your birth" required>
+                  <label>생년월일 (MM/DD/YYYY, 미성년자 가입 가능)</label>
+                  <input type="text" name="birth" id="birth" class="form-control" maxlength="10" placeholder="Write your birth" required autocomplete="off">
                 </div>
                 <div class="form-group">
                   <label>휴대전화 번호</label>
-                  <input type="tel" pattern="010[0-9]{8}" name="phone" id="phone" class="form-control" placeholder="Write your phone number" maxlength="11" required>
+                  <input type="tel" pattern="010[0-9]{8}" name="phone" id="phone" class="form-control" placeholder="Write your phone number" maxlength="11" required autocomplete="off">
                 </div>
                 <div class="form-group" style>
                   <div class="h-captcha" data-sitekey="d0d7eb01-1e20-4632-b21b-a0afbf14cd3e" id="hcaptcha"></div>
@@ -298,11 +298,11 @@
                 } else {
                 ?>
                 <div class="form-group">
-                  <label>이름</label>
+                  <label>이름 (본명 아니어도 됨)</label>
                   <input type="text" name="name" id="name" class="form-control" placeholder="Write your name" required value="<?php echo $_GET['name']; ?>">
                 </div>
                 <div class="form-group">
-                  <label>이메일</label>
+                  <label>이메일 (구글 메일로 해주세요!!)</label>
                   <input type="email" name="email" id="email" class="form-control" placeholder="Write your email address" required value="<?php echo $_GET['email']; ?>">
                 </div>
                 <div class="form-group">
@@ -310,16 +310,16 @@
                   <input type="text" name="nickname" id="nickname" class="form-control" placeholder="Write your nickname" required value="<?php echo $_GET['nickname']; ?>">
                 </div>
                 <div class="form-group">
-                  <label>디스코드 태그</label>
+                  <label>디스코드 태그 (ex. ! SSKATE ✅#9781)</label>
                   <input type="text" name="tag" id="tag" class="form-control" placeholder="Write your discord tag" required value="<?php echo $_GET['tag']; ?>">
                 </div>
                 <div class="form-group">
-                  <label>생년월일 (MM/DD/YYYY)</label>
-                  <input type="text" pattern="[0-9]{2}/[0-9]{2}/[1-9]{1}[0-9]{3}" name="birth" id="birth" class="form-control" maxlength="10" placeholder="Write your birth" required value="<?php echo $_GET['birth']; ?>">
+                  <label>생년월일 (MM/DD/YYYY, 미성년자 가입 가능)</label>
+                  <input type="text" name="birth" id="birth" class="form-control" maxlength="10" placeholder="Write your birth" required value="<?php echo $_GET['birth']; ?>" autocomplete="off">
                 </div>
                 <div class="form-group">
                   <label>휴대전화 번호</label>
-                  <input type="tel" pattern="010[0-9]{8}" name="phone" id="phone" class="form-control" placeholder="Write your phone number" maxlength="11" required value="<?php echo $_GET['phone']; ?>">
+                  <input type="tel" pattern="010[0-9]{8}" name="phone" id="phone" class="form-control" placeholder="Write your phone number" maxlength="11" required value="<?php echo $_GET['phone']; ?>" autocomplete="off">
                 </div>
                 <div class="form-group" style>
                   <div class="h-captcha" data-sitekey="d0d7eb01-1e20-4632-b21b-a0afbf14cd3e" id="hcaptcha"></div>
@@ -375,6 +375,8 @@
   <!-- Vendor Scripts -->
   <script src="./static/js/vendor.min.js"></script>
   <!-- Plugin's Scripts -->
+  <link rel="stylesheet" href="./static/plugins/jquery-ui/jquery-ui.css">
+  <script src="./static/plugins/jquery-ui/jquery-ui.js"></script>
   <script src="./static/plugins/fancybox/jquery.fancybox.min.js"></script>
   <script src="./static/plugins/nice-select/jquery.nice-select.min.js"></script>
   <script src="./static/plugins/aos/aos.min.js"></script>
@@ -388,6 +390,7 @@
   <!-- Activation Script -->
   <script src="./static/js/custom.js"></script>
   <script src='https://www.hCaptcha.com/1/api.js' async defer></script>
+  <script>$("#birth").datepicker();</script>
 </body>
 
 </html>
