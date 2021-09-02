@@ -263,8 +263,16 @@
                   <input type="text" name="birth" id="birth" class="form-control" maxlength="10" placeholder="Write your birth" required autocomplete="off">
                 </div>
                 <div class="form-group">
-                  <label>휴대전화 번호</label>
-                  <input type="tel" pattern="010[0-9]{8}" name="phone" id="phone" class="form-control" placeholder="Write your phone number" maxlength="11" required autocomplete="off">
+                  <label>휴대전화 번호 (선택사항)</label>
+                  <input type="tel" pattern="010[0-9]{8}" name="phone" id="phone" class="form-control" placeholder="Write your phone number" maxlength="11" autocomplete="off">
+                </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="message_policy" value="true" id="message_policy">
+                    <label class="form-check-label" for="defaultCheck1">
+                      광고/홍보/공지성 메시지 발송 동의
+                    </label>
+                  </div>
                 </div>
                 <div class="form-group" style>
                   <div class="h-captcha" data-sitekey="d0d7eb01-1e20-4632-b21b-a0afbf14cd3e" id="hcaptcha"></div>
@@ -275,7 +283,7 @@
                 </div>-->
                 <div class="send-btn">
                   <button class="btn btn-style-04">사전예약 하기</button>
-                  <p style="text-align: center;"><br>사전예약 하기를 누르면 개인정보 제공 및 이용,<br>광고/홍보성 메시지 전송에 동의하는 것으로 간주합니다.</p>
+                  <p style="text-align: center;"><br>사전예약 하기를 누르면 <a href="/policy/tos/">이용약관</a>, <a href="/policy/privacy/">개인정보 제공 및 이용</a>에 동의하는 것으로 간주합니다.</p>
                 </div>
                 <script>
                   document.body.querySelector('.send-btn .btn').addEventListener('click', (e) => {
@@ -318,8 +326,16 @@
                   <input type="text" name="birth" id="birth" class="form-control" maxlength="10" placeholder="Write your birth" required value="<?php echo $_GET['birth']; ?>" autocomplete="off">
                 </div>
                 <div class="form-group">
-                  <label>휴대전화 번호</label>
-                  <input type="tel" pattern="010[0-9]{8}" name="phone" id="phone" class="form-control" placeholder="Write your phone number" maxlength="11" required value="<?php echo $_GET['phone']; ?>" autocomplete="off">
+                  <label>휴대전화 번호 (선택사항)</label>
+                  <input type="tel" pattern="010[0-9]{8}" name="phone" id="phone" class="form-control" placeholder="Write your phone number" maxlength="11" value="<?php echo $_GET['phone']; ?>" autocomplete="off">
+                </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="message_policy" value="TRUE" id="message_policy">
+                    <label class="form-check-label" for="defaultCheck1">
+                      광고/홍보/공지성 메시지 발송 동의
+                    </label>
+                  </div>
                 </div>
                 <div class="form-group" style>
                   <div class="h-captcha" data-sitekey="d0d7eb01-1e20-4632-b21b-a0afbf14cd3e" id="hcaptcha"></div>
@@ -330,7 +346,7 @@
                 </div>-->
                 <div class="send-btn">
                   <button class="btn btn-style-04">사전예약 하기</button>
-                  <p style="text-align: center;"><br>사전예약 하기를 누르면 개인정보 제공 및 이용,<br>광고/홍보성 메시지 전송에 동의하는 것으로 간주합니다.</p>
+                  <p style="text-align: center;"><br>사전예약 하기를 누르면 <a href="/policy/tos/">이용약관</a>, <a href="/policy/privacy/">개인정보 제공 및 이용</a>에 동의하는 것으로 간주합니다.</p>
                 </div>
                 <script>
                   document.body.querySelector('.send-btn .btn').addEventListener('click', (e) => {
@@ -389,6 +405,7 @@
   <script src="/static/plugins/menu/menu.js"></script>
   <!-- Activation Script -->
   <script src="/static/js/custom.js"></script>
+  <script src="/static/js/scripts.js"></script>
   <script src='https://www.hCaptcha.com/1/api.js' async defer></script>
   <script>$("#birth").datepicker();</script>
 </body>

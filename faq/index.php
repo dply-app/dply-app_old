@@ -296,6 +296,7 @@
   <script src="/static/plugins/menu/menu.js"></script>
   <!-- Activation Script -->
   <script src="/static/js/custom.js"></script>
+  <script src="/static/js/scripts.js"></script>
 </body>
 
 </html>
