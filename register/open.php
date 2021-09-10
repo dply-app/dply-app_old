@@ -27,7 +27,7 @@
               <div class="section__heading text-center">
                 <h2>사전 예약</h2>
               </div>
-              <form action="/registerAction.php" method="POST" class="contact-form-l3">
+              <form action="/register/registerAction.php" method="POST" class="contact-form-l3">
               <?php
                 if ($_GET['restart'] != 1) {
               ?>
@@ -63,9 +63,6 @@
                     </label>
                   </div>
                 </div>
-                <div class="form-group" style>
-                  <div class="h-captcha" data-sitekey="d0d7eb01-1e20-4632-b21b-a0afbf14cd3e" id="hcaptcha"></div>
-                </div>
                 <!--<div class="form-group">
                   <label></label>
                   <textarea name="" id="" class="form-control" placeholder="Add a brief of your project"></textarea>
@@ -74,23 +71,6 @@
                   <button class="btn btn-style-04">사전예약 하기</button>
                   <p style="text-align: center;"><br>사전예약 하기를 누르면 <a href="/policy/tos/">이용약관</a>, <a href="/policy/privacy/">개인정보 제공 및 이용</a>에 동의하는 것으로 간주합니다.</p>
                 </div>
-                <script>
-                  document.body.querySelector('.send-btn .btn').addEventListener('click', (e) => {
-                    var hcaptcha_data = document.body.querySelector(".h-captcha iframe").dataset.hcaptchaResponse;
-                    var name = document.body.querySelector("#name").value;
-                    var email = document.body.querySelector("#email").value;
-                    var nickname = document.body.querySelector("#nickname").value;
-                    var tag = document.body.querySelector("#tag").value;
-                    var birth = document.body.querySelector("#birth").value;
-                    var phone = document.body.querySelector("#phone").value;
-                    if (name || email || nickname || tag || birth || phone) {
-                      if (hcaptcha_data == "" || !hcaptcha_data || hcaptcha_data == null || hcaptcha_data == undefined) {
-                        Swal.fire({icon: 'error', title: 'hCaptcha Error', html: 'hCaptcha를 진행하지 않았습니다.<br>hCaptcha를 진행해 주십시오.'})
-                        e.preventDefault()
-                      }
-                    }
-                  })
-                </script>
                 <?php
                 } else {
                 ?>
@@ -126,9 +106,6 @@
                     </label>
                   </div>
                 </div>
-                <div class="form-group" style>
-                  <div class="h-captcha" data-sitekey="d0d7eb01-1e20-4632-b21b-a0afbf14cd3e" id="hcaptcha"></div>
-                </div>
                 <!--<div class="form-group">
                   <label></label>
                   <textarea name="" id="" class="form-control" placeholder="Add a brief of your project"></textarea>
@@ -137,24 +114,6 @@
                   <button class="btn btn-style-04">사전예약 하기</button>
                   <p style="text-align: center;"><br>사전예약 하기를 누르면 <a href="/policy/tos/">이용약관</a>, <a href="/policy/privacy/">개인정보 제공 및 이용</a>에 동의하는 것으로 간주합니다.</p>
                 </div>
-
-                <script>
-                  document.body.querySelector('.send-btn .btn').addEventListener('click', (e) => {
-                    var hcaptcha_data = document.body.querySelector(".h-captcha iframe").dataset.hcaptchaResponse;
-                    var name = document.body.querySelector("#name").value;
-                    var email = document.body.querySelector("#email").value;
-                    var nickname = document.body.querySelector("#nickname").value;
-                    var tag = document.body.querySelector("#tag").value;
-                    var birth = document.body.querySelector("#birth").value;
-                    var phone = document.body.querySelector("#phone").value;
-                    if (name || email || nickname || tag || birth || phone) {
-                      if (hcaptcha_data == "" || !hcaptcha_data || hcaptcha_data == null || hcaptcha_data == undefined) {
-                        Swal.fire({icon: 'error', title: 'hCaptcha Error', html: 'hCaptcha를 진행하지 않았습니다.<br>hCaptcha를 진행해 주십시오.'})
-                        e.preventDefault()
-                      }
-                    }
-                  })
-                </script>
                 <?php
                 }
                 ?>

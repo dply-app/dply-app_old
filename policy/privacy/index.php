@@ -63,7 +63,7 @@
                 </div>
             </div>
         </div>
-        <iframe src="origin/20210801.html" id="iframe" name="policy" frameborder="0"></iframe>
+        <iframe src="/policy/privacy/origin/20210801.html" id="iframe" name="policy" frameborder="0"></iframe>
     </section>
 
     <script>
